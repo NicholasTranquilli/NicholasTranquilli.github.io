@@ -1,1 +1,76 @@
-test
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Link Webpage</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="main.css" rel="stylesheet">
+    <link href="main.js" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="min-vh-100 d-flex flex-column justify-content-center text-center">
+        <h1 class="title">Nicholas Tranquilli</h1>
+        <div class="link-slots">
+            <div class="link-slot">
+                <a href="#">
+                    <img src="resources/github.svg" alt="...">
+                </a>
+            </div>
+            <div class="link-slot">
+                <a href="#">
+                    <img src="resources/linkedin.svg" alt="...">
+                </a>
+            </div>
+            <div class="link-slot">
+                <a href="#">
+                    <img src="resources/email.svg" alt="...">
+                </a>
+            </div>
+            <!-- Add a new link with an image here -->
+        </div>
+
+        <!-- Animated down arrow -->
+        <div class="scroll-projects align-items-end">
+            <h3>Projects</h3>
+            <a href="#scroll-projects">
+                <img src="resources/down_arrow.svg" onclick="" alt="...">
+            </a>
+        </div>
+    </div>
+
+    <!-- Add a target element for scrolling -->
+    <div id="scroll-projects" class="bg-dark min-vh-100 d-flex flex-column">
+        <div class="p-2 project-element">
+            <h1>Networking Lib (C++) (Private)</h1>
+            <a href="#" class="me-5">blog post</a>
+            <a href="#" class="ms-3">repository</a>
+        </div>
+        <br>
+
+        <div class="p-2 project-element">
+            <h1>D3D11 Graphics Lib (C++) (Private)</h1>
+            <a href="#" class="me-5">blog post</a>
+            <a href="#" class="ms-3">repository</a>
+        </div>
+        <br>
+
+        <div class="p-2 project-element">
+            <h1>Networking Lib (C++) (Private)</h1>
+            <a href="#" class="me-5">blog post</a>
+            <a href="#" class="ms-3">repository</a>
+        </div>
+        <br>
+
+    </div>
+
+
+
+</body>
+
+</html>
