@@ -1,0 +1,37 @@
+---
+layout: contact
+permalink: /contact/
+title: Contact
+---
+
+<style>
+    .contact, .contact:hover, .contact:focus {
+        text-decoration: none;
+    }
+</style>
+
+<body>
+    <data class="u-url" href="/"></data>
+    <div class="wrapper">
+      <h2 class="footer-heading">Contact</h2>
+      <div class="footer-col-wrapper">
+        <div class="footer-col footer-col-1">
+          <ul class="contact-list">
+            {% for contact in site.data.contact %}
+                <li><a class="contact" href="mailto:{{contact.email}}">{{ contact.email }}</a></li>
+            {% endfor %}
+            {% for contact in site.data.other_contact %}
+                <li><p>{{ contact.contact }}</p></li>
+            {% endfor %}
+            </ul>
+        </div>
+        <div class="footer-col footer-col-2">
+          <ul style="list-style-type:none">
+          </ul>
+        </div>
+        <div class="footer-col footer-col-3">
+          <p>list socials here</p>
+        </div>
+      </div>
+    </div>
+</body>
