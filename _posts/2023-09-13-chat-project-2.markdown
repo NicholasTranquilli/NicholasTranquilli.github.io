@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Two Way Communication With Server and Client C++"
-date:   2023-09-13 15:58:00 -400
+date:   2023-09-18 15:58:00 -400
 categories: "Networking-Library"
 repository: https://github.com/NicholasTranquilli/Networking-Lib
 post-category-number: 2
