@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "Introduction"
+date:   2023-09-12 15:18:42 -400
+categories: General
+---
+
+First post of the blog.
+
+A bit about me:
+
+My name is Nicholas Tranquilli.
+I have been programming since I was around 14 years old and have always had a passion for it.
+I primarily code in C++ because this was my first language however I do work with C, ASM, C#, Python, Java, Web Development, and I enjoy occasional reverse engineering projects.
+I am starting this blog as more of a documentation / log for my projects.
+I present all posts in a somewhat educational manner to help others learn from my work.
+I also believe that teaching is a great way to further understand what you are doing and learn even more.
+Posts on this page include private repos and public repos of mine.
+If the repo exists publicly I will provide a link to it at the top of the post.
