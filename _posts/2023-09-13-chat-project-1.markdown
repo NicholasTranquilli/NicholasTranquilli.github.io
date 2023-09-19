@@ -3,7 +3,7 @@ layout: post
 title:  "Basic Send and Receive in C++"
 date:   2023-09-12 15:58:00 -400
 categories: "Networking-Library"
-repository:
+repository: https://github.com/NicholasTranquilli/Networking-Lib
 post-category-number: 1
 ---
 <h3>Introduction</h3>
@@ -25,7 +25,7 @@ Because i'm using windows, I will be using the winsock library which can be acce
 <h3>The Server Class</h3>
 
 A basic server has only 2 main goals, sending and receiving data to and from clients.
-Here is the basic layout of the Server class and I wil walk through it step by step.
+Here is the basic layout of the Server class and I will walk through it step by step.
 
 ```c++
 // Server.h
@@ -69,7 +69,8 @@ int Server::GetFrom(SOCKET& client, char* out, int size)
 ```
 
 A very simple function using the winsock provided "recv" function.
-The recv function takes the client "SOCKET" which is a winsock struct that can be used to identify, send, and receive messages from network objects such as servers and clients.
+The recv function takes the client "SOCKET" which is a winsock type that can be used to identify, send, and receive messages from network objects such as servers and clients.
+Taking a closer look at this type, you can see that it's actually just a typedef of an unsigned int.
 recv uses the client parameter in order to check if this SOCKET has sent any messages.
 If so, these messages are stored in the "out" buffer parameter.
 The "size" parameter is a hardcoded buffer size (at the time of writing this 512 bytes) and all messages sent from the client match this size (more on that in the Client class section).
@@ -157,4 +158,79 @@ This will be added in a future update via a "SendTo" function.
 
 <h3>The Client Class</h3>
 
-To be continued...
+The client class is very similar to the server class, here is a basic outline:
+
+```c++
+// Client.h
+
+class Client
+{
+    addrinfo* result;
+    SOCKET connectSocket;
+
+    const char* serverIP;
+    const char* serverPort;
+
+public:
+	Client(const char* IP, const char* port);
+
+    void Send(char* message);
+    int Run();
+};
+```
+
+Similarly to the server class, the client class has a constructor that initializes winsock.
+However the client also has a "Send" function:
+
+```c++
+// Client.cpp
+
+void Client::Send(char* message)
+{
+    // Send packet to server
+    int iResult = send(connectSocket, message, strlen(message), 0);
+    // Error checking and throw last winsock error
+    if (iResult == SOCKET_ERROR)
+        throw WSAGetLastError();
+    // Debug text
+    printf("Bytes Sent: %ld\n", iResult);
+}
+```
+
+The "Send" function is relatively self explanatory with the above comments.
+
+Now we can get into the main part of the Client class, the "Run" function.
+
+```c++
+// Client.cpp
+
+int Client::Run()
+{
+    // Debug text
+    printf("Client starting...\n");
+    printf("Type something!\n");
+    
+    try {
+        // string buffer
+        std::string s;
+        // Send an initial buffer
+        while (true)
+        {
+            // Get user input
+            std::getline(std::cin, s);
+            // Send user input to client via send function
+            this->Send((char*)s.c_str());
+        }
+    }
+    catch (...) {
+        // Catch all throws and print default error string
+        printf("last error: %i\n", WSAGetLastError());
+    }
+
+    return 0;
+}
+```
+
+As you can see, not a lot of code is required for this basic server / client library.
+In my next post I will talk about receiving messages from the server on the client side as well as two way communication between the server and multiple clients.
+

@@ -16,4 +16,4 @@ I am starting this blog as more of a documentation / log for my projects.
 I present all posts in a somewhat educational manner to help others learn from my work.
 I also believe that teaching is a great way to further understand what you are doing and learn even more.
 Posts on this page include private repos and public repos of mine.
-If the repo exists publicly I will provide a link at the top of the post.
+If the repo exists publicly I will provide a link to it at the top of the post.
