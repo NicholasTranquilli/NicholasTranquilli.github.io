@@ -16,9 +16,9 @@ Below is a simple program outline as well as details about how this language wil
     // DEMO 1 CODE
 
     // Encoding (first draft)
-    // (4 byte)     R / FR: | TYPE 2 |  OP 6  |  RD 4  |  R1 4  |  R2 4  | RESERVED 12 |
+    // (4 byte)         R / FR: | TYPE 2 |  OP 6  |  RD 4  |  R1 4  |  R2 4  | RESERVED 12 |
     // (2 byte + Size)  I / FI: | TYPE 2 |  OP 6  |  RD 4  | SIZE 4 |  IMMEDIATE DATA ...  |
-    // (4 byte)     J:  | TYPE 2 |                   ADDRESS  30                   |
+    // (4 byte)         J:  | TYPE 2 |                   ADDRESS  30                   |
 
     // Type is 0 J instruction
     // Type is 1 R instruction
@@ -64,31 +64,31 @@ Below is a simple program outline as well as details about how this language wil
 
 .text
 @main
-    mov $p1, 1      // p1 = 1
+    mov $p1, 1          // p1 = 1
 
     add $p0, $p1, 1     // p0 = 2
     add $r0, $p0, $p1   // p0 = 3
 
     mov $p0, $r0        // move r0 into p0
-    mov $s, 1       // print contents in p0
+    mov $s, 1           // print contents in p0
     syscall
        
-    jmp end         // jump
+    jmp end             // jump
        
     // THIS SHOULD BE SKIPPED WITH THE JMP INSTRUCTION
        
     lsh $r0, $r0, 1     // left shift r0 by 1, store in r0
-    mov $r1, 1      // move 1 into r1
+    mov $r1, 1          // move 1 into r1
     rsh $r0, $r0, $r1   // right shift t0 by contents in r1, store in r0
 
     mov $p0, $r0        // move r0 into p0
-    mov $s, 1       // print contents in p0
+    mov $s, 1           // print contents in p0
     syscall
 
     // JMP END GOES TO HERE
        
 @end
-    mov $s, 0       // exit
+    mov $s, 0           // exit
     syscall
 ```
 
