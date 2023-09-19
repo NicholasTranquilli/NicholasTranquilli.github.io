@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Introduction to my custom ASM language"
-date:   2023-09-12 21:22:08 -400
+date:   2023-09-18 21:22:08 -400
 categories: "Lob-Assembly-Language"
 repository:
 post-category-number: 1
