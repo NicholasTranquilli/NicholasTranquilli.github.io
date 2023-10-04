@@ -43,7 +43,7 @@ Below is a simple program outline as well as details about how this language wil
     //
     // r0 = r0 + 4; // $r0[4]
     // r0 = r1 - 2; // $r0[4] = $r1[-2]
-    // r0 = r0 - 4; // set t0 back to starting point
+    // r0 = r0 - 4; // set r0 back to starting point
    
     // Starting locations
     // .text starting location 0x000000000
@@ -51,6 +51,7 @@ Below is a simple program outline as well as details about how this language wil
     // no other . sections are allowed
 
     // LIST OF SYSCALLS ($s values):
+    // 0    - exit program
     // 1    - print value in p0
 
 .data
