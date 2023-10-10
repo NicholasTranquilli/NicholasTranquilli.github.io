@@ -25,13 +25,6 @@ title: Contact
             {% endfor %}
             </ul>
         </div>
-        <div class="footer-col footer-col-2">
-          <ul style="list-style-type:none">
-          </ul>
-        </div>
-        <div class="footer-col footer-col-3">
-          <p>list socials here</p>
-        </div>
       </div>
     </div>
 </body>
