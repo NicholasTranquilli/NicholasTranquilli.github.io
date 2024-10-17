@@ -21,11 +21,6 @@ export default function RootLayout({
           <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
           <meta name="google-site-verification" content="0ohwv8fp9y2lDbJvO3wlop_RGWLT_B1HFT4WB64T5vk" />
           <title>Nicholas Tranquilli</title>
-      
-          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
-      
-          <link href="main.css" rel="stylesheet" />
-          <link href="main.js" rel="stylesheet" />
       </head>
 
       <body className={inter.className}>{children}</body>
