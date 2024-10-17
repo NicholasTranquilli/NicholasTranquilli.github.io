@@ -31,3 +31,57 @@ body {
     text-wrap: balance;
   }
 }
+
+/* CUSTOM CSS */
+
+body {
+  background-color: #f0f0f0;
+  color: #444444;
+}
+
+.bg-dark {
+  background-color: #444444;
+  color: #f0f0f0;
+}
+
+.title {
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+
+.link-slots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.link-slot {
+  margin: 10px;
+}
+
+.link-slot a img {
+  max-width: 32px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.link-slot a:hover img {
+  transform: scale(1.1);
+}
+
+.scroll-projects {
+  margin-top: 90px;
+}
+
+.scroll-projects a img {
+  max-width: 32px;
+}
+
+.project-element {
+  margin-top: 15px;
+}
+
+.project-element a {
+  color: #f0f0f0;
+  text-decoration: none
+}
