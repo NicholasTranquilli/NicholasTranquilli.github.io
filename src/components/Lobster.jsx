@@ -13,7 +13,7 @@ export function Lobster(props) {
 
   useFrame(() => {
     if (meshRef.current) {
-      setRotation((prev) => [prev[0] + 0.01, prev[1] + .01, prev[2]]);
+      setRotation((prev) => [prev[0] + 0.005, prev[1] + 0.02, prev[2] + 0.015]);
     }
   });
 
