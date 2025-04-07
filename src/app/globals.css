@@ -13,3 +13,15 @@ canvas {
   height: 100%;
   display: block;
 }
+
+@keyframes blink {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #FFFFFF;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
