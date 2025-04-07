@@ -262,7 +262,7 @@ export default function Projects() {
               <div className="m-10 bg-white rounded-md">
                 <div className="max-w-fit max-h-fit relative">
                   <Image className="rounded-md p-4" style={{ whiteSpace: 'nowrap', display: 'inline' }} width={500} height={500} layout="responsive"
-                    objectFit="cover" src="/MOTH_LOGO.png" alt="..."></Image>
+                    objectFit="cover" src="/MOTH_Logo.png" alt="..."></Image>
                   <div
                     className="absolute z-[1] top-0 left-0 w-full h-full bg-gradient-to-t from-amber-900 to-yellow-100 opacity-50 rounded-md"
                   />
