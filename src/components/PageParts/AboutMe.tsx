@@ -14,10 +14,10 @@ export default function AboutMe() {
   const [index, setIndex] = useState<number>(0);
 
   let consoleTextList = [
-    { noblink: true, breakCount: 1, text: "Hey, my name is Nicholas Tranquilli.", typingSpeed: 25 },
-    { noblink: true, breakCount: 2, text: "You're probably here to learn a bit about me, so here's a quick history: I began programming at 14 after building my first computer. I started by learning C++, making basic native console applications. Since then, I have learned and interacted with many different languages, frameworks, and people.", typingSpeed: 25 },
-    { noblink: true, breakCount: 2, text: "I have utilized my skills everywhere from individual projects and small teams to large-scale professional environments.", typingSpeed: 25 },
-    { keepblink: true, breakCount: 1, pretext: "", text: "Here are a few of the projects I have worked on...", typingSpeed: 25 }
+    { noblink: true, breakCount: 1, text: "Hey, I'm Nick.", typingSpeed: 20 },
+    { noblink: true, breakCount: 2, text: "You probably ended up here because you're curious about who I am or what I do. Maybe you got a little lost, or you're wondering why half my repositories are branded with lobster... Anyway, welcome!", typingSpeed: 20 },
+    { noblink: true, breakCount: 2, text: "I started programming at 14 after building my first computer. My first language was C++, messing around with basic console applications. Since then, I've worked with a wide range of languages, frameworks, and people. I've applied my skills across solo projects, small teams, and full-on production environments.", typingSpeed: 20 }, 
+    { keepblink: true, breakCount: 1, pretext:"", text: "Here are a few things I've built…", typingSpeed: 20 }
   ]
 
   function consoleTextOnFinish() {

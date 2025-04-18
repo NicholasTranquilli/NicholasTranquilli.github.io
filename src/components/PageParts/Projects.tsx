@@ -29,21 +29,21 @@ export default function Projects() {
 
                   {/* GITHUB */}
                   <div className="absolute bottom-4 left-4 z-[1] flex flex-row">
-                    <MWSResponsiveCaption className="underline flex-1 text-white font-bold">
+                    <MWSResponsiveCaption className="underline flex-1 text-white font-bold pr-2">
                       <a href="https://github.com/NicholasTranquilli/lbgfx">
                         GitHub
                       </a>
                     </MWSResponsiveCaption>
 
                     {/* SKILLS */}
-                    <div className="ml-1 bottom-4 right-4 flex flex-row text-center items-center justify-center">
-                      <MWSResponsiveSubtext className="flex-1 bg-blue-300 rounded-xl px-2 ml-[10%] mr-[1%]">
+                    <div className="ml-1 bottom-4 right-4 flex flex-wrap text-center items-cetner justify-center max-w-[100%] min-h-fit">
+                      <MWSResponsiveSubtext className="flex-1 bg-blue-300 rounded-xl max-w-fit px-[5px] m-1 max-h-fit">
                         C++
                       </MWSResponsiveSubtext>
-                      <MWSResponsiveSubtext className="flex-1 bg-yellow-300 rounded-xl px-2 mx-[1%]">
+                      <MWSResponsiveSubtext className="flex-1 bg-yellow-300 rounded-xl max-w-fit px-[5px] m-1 max-h-fit">
                         HLSL
                       </MWSResponsiveSubtext>
-                      <MWSResponsiveSubtext className="flex-1 bg-green-300 rounded-xl px-2 mx-[1%]">
+                      <MWSResponsiveSubtext className="flex-1 bg-green-300 rounded-xl max-w-fit px-[5px] m-1 max-h-fit">
                         DirectX
                       </MWSResponsiveSubtext>
                     </div>
@@ -86,21 +86,21 @@ export default function Projects() {
 
                   {/* GITHUB */}
                   <div className="absolute bottom-4 left-4 z-[1] flex flex-row">
-                    <MWSResponsiveCaption className="underline flex-1 text-white font-bold">
+                    <MWSResponsiveCaption className="underline flex-1 text-white font-bold pr-2">
                       <a href="https://github.com/NicholasTranquilli/WFPPacketInjector">
                         GitHub
                       </a>
                     </MWSResponsiveCaption>
 
                     {/* SKILLS */}
-                    <div className="ml-1 bottom-4 right-4 flex flex-row text-center items-center justify-center">
-                      <MWSResponsiveSubtext className="flex-1 bg-blue-300 rounded-xl px-2 ml-[10%] mr-[1%]">
+                    <div className="ml-1 bottom-4 right-4 flex flex-wrap text-center items-cetner justify-center max-w-[100%] min-h-fit">
+                      <MWSResponsiveSubtext className="flex-1 bg-blue-300 rounded-xl max-w-fit px-[5px] m-1 max-h-fit">
                         C++
                       </MWSResponsiveSubtext>
-                      <MWSResponsiveSubtext className="flex-1 bg-gray-300 rounded-xl px-2 mx-[1%]">
+                      <MWSResponsiveSubtext className="flex-1 bg-gray-300 rounded-xl max-w-fit px-[5px] m-1 max-h-fit">
                         Networking
                       </MWSResponsiveSubtext>
-                      <MWSResponsiveSubtext className="flex-1 bg-red-300 rounded-xl px-2 mx-[1%]">
+                      <MWSResponsiveSubtext className="flex-1 bg-red-300 rounded-xl max-w-fit px-[5px] m-1 max-h-fit">
                         Kernel
                       </MWSResponsiveSubtext>
                     </div>
@@ -144,21 +144,21 @@ export default function Projects() {
 
                   {/* GITHUB */}
                   <div className="absolute bottom-4 left-4 z-[1] flex flex-row">
-                    <MWSResponsiveCaption className="underline flex-1 text-white font-bold">
+                    <MWSResponsiveCaption className="underline flex-1 text-white font-bold pr-2">
                       <a href="https://github.com/NicholasTranquilli/SotfP">
                         GitHub
                       </a>
                     </MWSResponsiveCaption>
 
                     {/* SKILLS */}
-                    <div className="ml-1 bottom-4 right-4 flex flex-row text-center items-center justify-center">
-                      <MWSResponsiveSubtext className="flex-1 bg-blue-300 rounded-xl px-2 ml-[10%] mr-[1%]">
+                    <div className="ml-1 bottom-4 right-4 flex flex-wrap text-center items-cetner justify-center max-w-[100%] min-h-fit">
+                      <MWSResponsiveSubtext className="flex-1 bg-blue-300 rounded-xl max-w-fit px-[5px] m-1 max-h-fit">
                         C++
                       </MWSResponsiveSubtext>
-                      <MWSResponsiveSubtext className="flex-1 bg-yellow-300 rounded-xl px-2 mx-[1%]">
+                      <MWSResponsiveSubtext className="flex-1 bg-yellow-300 rounded-xl max-w-fit px-[5px] m-1 max-h-fit">
                         Fonts
                       </MWSResponsiveSubtext>
-                      <MWSResponsiveSubtext className="flex-1 bg-purple-300 rounded-xl px-2 mx-[1%]">
+                      <MWSResponsiveSubtext className="flex-1 bg-purple-300 rounded-xl max-w-fit px-[5px] m-1 max-h-fit">
                         Parsing
                       </MWSResponsiveSubtext>
                     </div>
@@ -208,20 +208,20 @@ export default function Projects() {
 
                   <div className="absolute bottom-4 left-4 z-[1] flex flex-row">
                     {/* SKILLS */}
-                    <div className="ml-1 bottom-4 right-4 max-w-full flex flex-row text-center items-center justify-center">
-                      <MWSResponsiveSubtext className="flex-1 bg-teal-300 rounded-xl px-2 ml-[10%] mr-[1%]">
+                    <div className="ml-1 bottom-4 right-4 flex flex-wrap text-center items-cetner justify-center max-w-[100%] min-h-fit">
+                      <MWSResponsiveSubtext className="flex-1 bg-teal-300 rounded-xl max-w-fit px-[5px] m-1 max-h-fit">
                         ROS2
                       </MWSResponsiveSubtext>
-                      <MWSResponsiveSubtext className="flex-1 bg-fuchsia-300 rounded-xl px-2 mx-[1%]">
+                      <MWSResponsiveSubtext className="flex-1 bg-fuchsia-300 rounded-xl max-w-fit px-[5px] m-1 max-h-fit">
                         MoveIt2
                       </MWSResponsiveSubtext>
-                      <MWSResponsiveSubtext className="flex-1 bg-orange-300 rounded-xl px-2 mx-[1%]">
+                      <MWSResponsiveSubtext className="flex-1 bg-orange-300 rounded-xl max-w-fit px-[5px] m-1 max-h-fit">
                         Linux
                       </MWSResponsiveSubtext>
-                      <MWSResponsiveSubtext className="flex-1 bg-blue-300 rounded-xl px-2 mx-[1%]">
+                      <MWSResponsiveSubtext className="flex-1 bg-blue-300 rounded-xl max-w-fit px-[5px] m-1 max-h-fit">
                         C++
                       </MWSResponsiveSubtext>
-                      <MWSResponsiveSubtext className="flex-1 bg-green-300 rounded-xl px-2 mx-[1%]">
+                      <MWSResponsiveSubtext className="flex-1 bg-green-300 rounded-xl max-w-fit px-[5px] m-1 max-h-fit">
                         Python
                       </MWSResponsiveSubtext>
                     </div>
@@ -266,25 +266,25 @@ export default function Projects() {
                   <div
                     className="absolute z-[1] top-0 left-0 w-full h-full bg-gradient-to-t from-amber-900 to-yellow-100 opacity-50 rounded-md"
                   />
-
+                  
                   {/* GITHUB */}
                   <div className="absolute bottom-4 left-4 z-[1] flex flex-row">
 
-                    <MWSResponsiveCaption className="underline flex-1 text-white font-bold">
-                      <a href="https://mothdev.com">
-                        Business Website
+                    <MWSResponsiveCaption className="underline flex-1 text-white font-bold flex items-end pr-2">
+                      <a className="whitespace-nowrap" href="https://mothdev.com">
+                        Business Site
                       </a>
                     </MWSResponsiveCaption>
 
                     {/* SKILLS */}
-                    <div className="ml-1 bottom-4 right-4 flex flex-row text-center items-center justify-center">
-                      <MWSResponsiveSubtext className="flex-1 bg-yellow-300 rounded-xl px-2 ml-[10%] mr-[1%]">
+                    <div className="ml-1 bottom-4 right-4 flex flex-wrap text-center items-cetner justify-center max-w-[100%] min-h-fit">
+                      <MWSResponsiveSubtext className="flex-1 bg-yellow-300 rounded-xl max-w-fit px-[5px] m-1 max-h-fit">
                         Web
                       </MWSResponsiveSubtext>
-                      <MWSResponsiveSubtext className="flex-1 bg-orange-300 rounded-xl px-2 mx-[1%]">
+                      <MWSResponsiveSubtext className="flex-1 bg-orange-300 rounded-xl max-w-fit px-[5px] m-1 max-h-fit">
                         NextJS
                       </MWSResponsiveSubtext>
-                      <MWSResponsiveSubtext className="flex-1 bg-cyan-300 rounded-xl px-2 mx-[1%]">
+                      <MWSResponsiveSubtext className="flex-1 bg-cyan-300 rounded-xl max-w-fit px-[5px] m-1 max-h-fit">
                         .NET
                       </MWSResponsiveSubtext>
                     </div>
